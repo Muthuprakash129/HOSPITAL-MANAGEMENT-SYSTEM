@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="sidebar">
+        <div class="logo">
+          <i class="fas fa-hospital"></i>
+          <span>HMS</span>
+        </div>
+        <ul class="nav-links">
+          <li class="active" data-page="dashboard">
+            <i class="fas fa-home"></i>
+            <span>Dashboard</span>
+          </li>
+          <li data-page="patients">
+            <i class="fas fa-user-injured"></i>
+            <span>Patients</span>
+          </li>
+          <li data-page="doctors">
+            <i class="fas fa-user-md"></i>
+            <span>Doctors</span>
+          </li>
+          <li data-page="appointments">
+            <i class="fas fa-calendar-check"></i>
+            <span>Appointments</span>
+          </li>
+          <li data-page="departments">
+            <i class="fas fa-hospital-alt"></i>
+            <span>Departments</span>
+          </li>
+        </ul>
+      </nav>
+
+      <main class="main-content">
+        <header>
+          <div class="header-content">
+            <h1>Dashboard</h1>
+            <div class="user-info">
+              <i class="fas fa-bell"></i>
+              <div class="user">
+                <img src="https://via.placeholder.com/40" alt="User" />
+                <span>Admin</span>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <div class="dashboard-content">
+          <div class="stats-container">
+            <div class="stat-card">
+              <i class="fas fa-user-injured"></i>
+              <div class="stat-info">
+                <h3>Total Patients</h3>
+                <p>1,234</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <i class="fas fa-user-md"></i>
+              <div class="stat-info">
+                <h3>Doctors</h3>
+                <p>45</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <i class="fas fa-calendar-check"></i>
+              <div class="stat-info">
+                <h3>Appointments</h3>
+                <p>89</p>
+              </div>
+            </div>
+            <div class="stat-card">
+              <i class="fas fa-hospital-alt"></i>
+              <div class="stat-info">
+                <h3>Departments</h3>
+                <p>12</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="recent-activity">
+            <h2>Recent Activity</h2>
+            <div class="activity-list">
+              <div class="activity-item">
+                <div class="activity-icon">
+                  <i class="fas fa-user-plus"></i>
+                </div>
+                <div class="activity-details">
+                  <h4>New Patient Registration</h4>
+                  <p>John Doe registered as a new patient</p>
+                  <span class="time">2 hours ago</span>
+                </div>
+              </div>
+              <div class="activity-item">
+                <div class="activity-icon">
+                  <i class="fas fa-calendar-plus"></i>
+                </div>
+                <div class="activity-details">
+                  <h4>New Appointment</h4>
+                  <p>Appointment scheduled with Dr. Smith</p>
+                  <span class="time">3 hours ago</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
